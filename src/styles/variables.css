@@ -1,0 +1,37 @@
+:root {
+  /* Colors */
+  --color-primary: 37 99 235; /* blue-600 */
+  --color-primary-dark: 29 78 216; /* blue-700 */
+  --color-secondary: 236 72 153; /* pink-500 */
+  --color-dark: 17 24 39; /* gray-900 */
+  --color-light: 249 250 251; /* gray-50 */
+  
+  /* Spacing */
+  --header-height: 4rem;
+  --section-padding: 5rem;
+  
+  /* Typography */
+  --text-base: 1rem;
+  --text-scale-ratio: 1.25;
+  --text-xs: calc(var(--text-base) / var(--text-scale-ratio));
+  --text-sm: calc(var(--text-xs) * var(--text-scale-ratio));
+  --text-md: calc(var(--text-sm) * var(--text-scale-ratio));
+  --text-lg: calc(var(--text-md) * var(--text-scale-ratio));
+  --text-xl: calc(var(--text-lg) * var(--text-scale-ratio));
+  --text-2xl: calc(var(--text-xl) * var(--text-scale-ratio));
+  --text-3xl: calc(var(--text-2xl) * var(--text-scale-ratio));
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  
+  /* Transitions */
+  --transition-default: all 0.3s ease;
+}
+
+@media (prefers-reduced-motion) {
+  :root {
+    --transition-default: none;
+  }
+}

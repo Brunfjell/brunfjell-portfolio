@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-text-primary: theme('colors.gray.900');
+    --color-text-secondary: theme('colors.gray.600');
+    --color-bg-primary: theme('colors.white');
+    --color-bg-secondary: theme('colors.gray.50');
+  }
+
+  .dark {
+    --color-text-primary: theme('colors.gray.50');
+    --color-text-secondary: theme('colors.gray.400');
+    --color-bg-primary: theme('colors.gray.900');
+    --color-bg-secondary: theme('colors.gray.800');
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem; 
+  }
+
+  body {
+    @apply bg-gray-50 text-gray-900 antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    @apply bg-blue-600/20 text-blue-900 dark:bg-blue-400/30 dark:text-blue-50;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-blue-500 outline-offset-2;
+  }
+
+  :root {
+    scrollbar-color: theme('colors.blue.500') theme('colors.gray.100');
+    scrollbar-width: thin;
+  }
+  
+  ::-webkit-scrollbar {
+    @apply w-2 h-2;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-100 dark:bg-gray-800;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-blue-500 rounded-full hover:bg-blue-600;
+  }
+}
+
+@layer components {
+  .prose {
+    h2 {
+      @apply text-2xl font-bold mt-12 mb-4;
+    }
+    p {
+      @apply my-4 leading-relaxed;
+    }
+    a {
+      @apply text-blue-600 hover:underline;
+    }
+  }
+
+  /* Enhanced button */
+  .btn {
+    @apply inline-flex items-center justify-center;
+    @apply px-4 py-2 rounded-lg font-medium transition-all;
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2;
+    @apply disabled:opacity-50 disabled:pointer-events-none;
+    
+    &-primary {
+      @apply bg-blue-600 text-white hover:bg-blue-700;
+      @apply focus-visible:ring-blue-500;
+    }
+    
+    &-outline {
+      @apply border border-gray-300 hover:border-gray-400;
+      @apply focus-visible:ring-gray-400;
+    }
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .delay-0 { animation-delay: 0ms; }
+  .delay-75 { animation-delay: 75ms; }
+  .delay-100 { animation-delay: 100ms; }
+
+  .grid-auto-fit {
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+  }
+
+  @variants dark {
+    .bg-elevated {
+      @apply bg-gray-800;
+    }
+  }
+}
