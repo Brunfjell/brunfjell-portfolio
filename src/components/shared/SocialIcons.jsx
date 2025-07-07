@@ -10,7 +10,7 @@ const SocialIcons = ({ className = "" }) => {
           target="_blank"
           rel="noopener noreferrer"
           aria-label={social.name}
-          className="text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors"
+          className="text-orange-700 hover:text-blue-600 dark:text-orange-500 dark:hover:text-blue-400 transition-colors"
         >
           <social.icon className="w-5 h-5" />
         </a>

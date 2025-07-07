@@ -10,7 +10,7 @@ const Hero = () => {
           transition={{ duration: 0.6 }}
           className="text-4xl md:text-6xl font-bold mb-6 text-stone-50"
         >
-          LUIS TROY PARAISO'S PORTFOLIO
+          BRUNFJELL
         </motion.h1>
         
         <motion.p
@@ -19,7 +19,7 @@ const Hero = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-lg md:text-xl text-stone-100 mb-8"
         >
-          An IT enthusiast with a passion for tech and hands-on problem-solving. 
+          Portfolio of an IT enthusiast with a passion for tech and hands-on problem-solving. 
           I enjoy building apps, websites, and IoT systems that blend creativity with functionality.
         </motion.p>
       </div>

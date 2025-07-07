@@ -13,9 +13,17 @@ const Header = () => {
         <motion.h1 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className="text-2xl font-bold"
+          className="flex items-center gap-2 text-2xl font-bold"
         >
-          BRUNFJELL
+          <motion.img 
+            src="src/assets/icons/brunfjell-icon.png" 
+            className="h-8 w-auto" 
+            alt="Brunfjell Logo"
+            initial={{ scale: 0.9 }}
+            animate={{ scale: 1 }}
+            transition={{ type: "spring", stiffness: 200 }}
+          />
+          <span>BRUNFJELL</span>
         </motion.h1>
         
         {/* Desktop Navigation */}
@@ -33,7 +41,6 @@ const Header = () => {
 
         <div className="flex items-center gap-4">
           <SocialIcons className="hidden md:flex" />
-          <ThemeToggle />
         </div>
 
         {/* Mobile Menu Button */}

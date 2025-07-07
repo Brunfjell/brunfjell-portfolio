@@ -1,12 +1,14 @@
-import { FaReact, FaNodeJs, FaPython } from 'react-icons/fa'
-import { SiJavascript, SiTypescript, SiArduino } from 'react-icons/si'
+import { FaReact, FaNodeJs, FaPython, FaJava } from 'react-icons/fa'
+import { SiJavascript, SiTypescript, SiArduino, SiGodotengine } from 'react-icons/si'
 import { createElement } from 'react'
 
 export const skills = [
-    { name: 'React', icon: createElement(FaReact), level: 87 },
-    { name: 'JavaScript', icon: createElement(SiJavascript), level: 85 },
-    { name: 'TypeScript', icon: createElement(SiTypescript), level: 74 },
-    { name: 'Node.js', icon: createElement(FaNodeJs), level: 75 },
-    { name: 'Python', icon: createElement(FaPython), level: 70 },
-    { name: 'Arduino', icon: createElement(SiArduino), level: 85 },
+    { name: 'React', icon: createElement(FaReact) },
+    { name: 'JavaScript', icon: createElement(SiJavascript) },
+    { name: 'TypeScript', icon: createElement(SiTypescript) },
+    { name: 'Node.js', icon: createElement(FaNodeJs) },
+    { name: 'Python', icon: createElement(FaPython) },
+    { name: 'Java', icon: createElement(FaJava) },
+    { name: 'Arduino', icon: createElement(SiArduino) },
+    { name: 'Godot', icon: createElement(SiGodotengine) },
 ]
