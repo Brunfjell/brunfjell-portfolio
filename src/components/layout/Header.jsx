@@ -2,7 +2,6 @@ import { motion } from "framer-motion"
 import { useState } from "react"
 import MobileMenu from "./MobileMenu"
 import SocialIcons from '../shared/SocialIcons'
-import ThemeToggle from '../shared/ThemeToggle'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -16,7 +15,7 @@ const Header = () => {
           className="flex items-center gap-2 text-2xl font-bold"
         >
           <motion.img 
-            src="src/assets/icons/brunfjell-icon.png" 
+            src="./assets/icons/brunfjell-icon.png" 
             className="h-8 w-auto" 
             alt="Brunfjell Logo"
             initial={{ scale: 0.9 }}

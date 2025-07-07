@@ -24,7 +24,7 @@ const About = () => {
             </p>
           </div>
           <div className="rounded-lg">
-            <img src="src\assets\images\profile-pic.jpg" className='rounded-full' alt="poto ni yortz"></img>
+            <img src=".\assets\images\profile-pic.jpg" className='rounded-full' alt="poto ni yortz"></img>
           </div>
         </div>
       </div>
