@@ -20,7 +20,7 @@ const Hero = () => {
           className="text-lg md:text-xl text-stone-100 mb-8"
         >
           Portfolio of an IT enthusiast with a passion for tech and hands-on problem-solving. 
-          I enjoy building apps, websites, and IoT systems that blend creativity with functionality.
+          Where building apps, websites, and IoT systems that blend creativity with functionality becomes the story.
         </motion.p>
       </div>
     </section>
