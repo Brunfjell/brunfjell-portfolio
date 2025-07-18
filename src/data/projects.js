@@ -15,6 +15,6 @@ export const projects = [
     tags: ['Car Rental', 'React + Vite', 'Firebase'],
     image: './assets/images/WanderGo.png',
     liveUrl: 'https://wandergo-carrental.firebaseapp.com/',
-    codeUrl: 'https://github.com/Brunfjell/wandergo'
+    codeUrl: null
   }
 ]
